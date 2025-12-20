@@ -1,5 +1,0 @@
-<input type="text" name="sponsor_name" placeholder="Sponsor Name"><br><br
-
-
-<input type="number" name="amount" placeholder="Donation Amount"> required><br>
-

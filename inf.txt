@@ -1,0 +1,22 @@
+<input type="text" name="sponsor_name" placeholder="Sponsor Name"><br><br
+
+
+<input type="number" name="amount" placeholder="Donation Amount"> required><br>
+
+to run: http://localhost/370 project/index.php
+
+
+to save in github: 4 steps
+
+
+# see what changed
+git status
+
+# stage changes
+git add .  
+
+# commit    
+git commit -m "Message"  
+
+# push to GitHub
+git push          
