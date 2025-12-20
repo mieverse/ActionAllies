@@ -1,7 +1,14 @@
 <?php
-$conn = mysqli_connect("localhost", "root", "", "ngo_db");
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "project370";
 
-if (!$conn) {
-    die("Database connection failed");
+$conn = new mysqli($servername, $username, $password);
+if ($conn->connect_error) {
+    die("Connection Failed: ". $conn->connect_error);
+}else{
+    echo "Connection Established";
+    mysqli_select_db($conn, $dbname);
 }
 ?>

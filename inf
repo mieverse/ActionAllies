@@ -16,7 +16,7 @@ git status
 git add .  
 
 # commit    
-git commit -m "Message"  
+git commit -m "text file name changed to inf"  
 
 # push to GitHub
 git push          

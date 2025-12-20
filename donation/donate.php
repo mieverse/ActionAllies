@@ -59,7 +59,7 @@
 
 <div class="form-container">
 
-    <form action="donate_process.php" method="POST">
+    <form action="donateprocess.php" method="POST">
 
         <input type="text" name="donor_name" placeholder="Name" required><br>
 
