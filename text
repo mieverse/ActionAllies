@@ -16,7 +16,7 @@ git status
 git add .  
 
 # commit    
-git commit -m "latest commit"  
+git commit -am "new commit"  
 
 # push to GitHub
 git push          
