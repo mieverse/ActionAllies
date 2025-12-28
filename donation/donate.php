@@ -19,7 +19,7 @@
 
 
         .form-container {
-            background-color: rgba(255, 255, 255, 0.9); /* semi-transparent for readability */
+            background-color: rgba(255, 255, 255, 0.9); /
             padding: 30px;
             border-radius: 10px;
             width: 350px;

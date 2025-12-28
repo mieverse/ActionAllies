@@ -1,5 +1,4 @@
 <?php
-// Include database connection from parent folder
 include '../dbconnects.php';
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -13,12 +12,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         exit("Invalid donation amount");
     }
 
-    // Generate Donor_ID like DNR001
+
     $result = mysqli_query($conn, "SELECT Donor_ID FROM donors ORDER BY Donor_ID DESC LIMIT 1");
 
     if ($result && mysqli_num_rows($result) > 0) {
         $row = mysqli_fetch_assoc($result);
-        $lastId = $row['Donor_ID'];          // e.g. DNR007
+        $lastId = $row['Donor_ID'];          // e.g. DNR001
         $num = (int) substr($lastId, 3) + 1;
     } else {
         $num = 1;
@@ -26,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $donor_id = 'DNR' . str_pad($num, 3, '0', STR_PAD_LEFT);
 
-    // Insert into table "donors"
+
     $sql = "INSERT INTO donors
             (Donor_ID, Donor_Name, Donor_Email, Amount, Pay_method)
             VALUES ('$donor_id', '$name', '$email', '$amount', '$method')";

@@ -3,23 +3,23 @@
 <head>
     <title>Sponsorship</title>
     <style>
-        /* Background for sponsor page */
+
         body.sponsor-bg {
-            background-image: url('../elements/background/sponsor.png'); /* path relative to sponsor.php */
-            background-size: contain;      /* ensures full image is visible */
-            background-position: center;   /* center image */
-            background-repeat: no-repeat;  /* don’t tile */
+            background-image: url('../elements/background/sponsor.png'); 
+            background-size: contain;      
+            background-position: center;   
+            background-repeat: no-repeat;
             min-height: 100vh;
             font-family: Arial, sans-serif;
             margin: 0;
             display: flex;
-            justify-content: center;       /* horizontal center */
-            align-items: center;           /* vertical center */
+            justify-content: center;       
+            align-items: center;           
         }
 
         /* Form container */
         .form-container {
-            background-color: rgba(255, 255, 255, 0.9); /* semi-transparent for readability */
+            background-color: rgba(255, 255, 255, 0.9); 
             padding: 30px;
             border-radius: 10px;
             width: 400px;
@@ -80,7 +80,7 @@
 
         <input type="email" name="sponsor_email" placeholder="Sponsor Email" required><br>
 
-        <input type="text" name="project" placeholder="Choose Project"><br>
+        <input type="text" name="sponsor_project" placeholder="Choose Project"><br>
         <a href="../projects/view.php" class="view-projects-btn">View Projects</a>
 
         <button type="submit">Submit Sponsorship</button>
