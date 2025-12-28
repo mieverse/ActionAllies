@@ -52,22 +52,41 @@
         .form-container button:hover {
             background-color: #0056b3;
         }
+
+
+        .view-projects-btn {
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: #17a2b8; 
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            /*font-weight: bold;*/
+            margin-top: 15px;
+            transition: opacity 0.3s;
+        }
+        .view-projects-btn:hover {
+            opacity: 0.85;
+        }
     </style>
 </head>
 <body class="sponsor-bg">
 
 <div class="form-container">
 
-    <form action="sponsor_process.php" method="POST">
+    <form action="sponsorprocess.php" method="POST">
 
         <input type="text" name="sponsor_name" placeholder="Sponsor Name" required><br>
 
         <input type="email" name="sponsor_email" placeholder="Sponsor Email" required><br>
 
         <input type="text" name="project" placeholder="Choose Project"><br>
+        <a href="../projects/view.php" class="view-projects-btn">View Projects</a>
 
         <button type="submit">Submit Sponsorship</button>
     </form>
+
+    
 </div>
 
 </body>
