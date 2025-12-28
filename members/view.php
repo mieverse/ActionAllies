@@ -2,8 +2,10 @@
 <html>
 <head>
     <title>View Members</title>
+
     <style>
         body {
+            background-image: url('../elements/background/any.png'); 
             font-family: Arial, sans-serif;
             background-color: #f4f6f8;
             margin: 0;
@@ -20,7 +22,7 @@
             margin: auto;
             border-collapse: collapse;
             background-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         th, td {
@@ -55,35 +57,35 @@
 </head>
 
 <body>
+    <h2>Our Members</h2>
 
-<h2>Our Members</h2>
+    <table>
+        <tr>
+            <th>Member ID</th>
+            <th>Member Name</th>
+            <th>Department</th>
+        </tr>
 
-<table>
-    <tr>
-        <th>Member ID</th>
-        <th>Member Name</th>
-        <th>Department</th>
-    </tr>
+        <!-- Sample rows (for now) -->
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
 
-    <!-- Sample rows (for now) -->
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-</table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
 
-<a href="../index.php" class="back-btn">⬅ Back to Home</a>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
 
+    <a href="../index.php" class="back-btn">Back to Home</a>
 </body>
 </html>

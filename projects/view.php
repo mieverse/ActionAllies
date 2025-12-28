@@ -4,6 +4,7 @@
     <title>View Projects</title>
     <style>
         body {
+            background-image: url('../elements/background/any.png');
             font-family: Arial, sans-serif;
             background-color: #f4f6f8;
             margin: 0;
@@ -95,7 +96,7 @@
 
 </table>
 
-<a href="../index.php" class="back-btn">⬅ Back to Home</a>
+<a href="../index.php" class="back-btn">Back to Home</a>
 
 </body>
 </html>

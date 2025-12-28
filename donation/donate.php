@@ -17,9 +17,8 @@
             align-items: center;          
         }
 
-
         .form-container {
-            background-color: rgba(255, 255, 255, 0.9); /
+            background-color: rgba(255, 255, 255, 0.9);
             padding: 30px;
             border-radius: 10px;
             width: 350px;
@@ -27,7 +26,6 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.2);
         }
 
-        /* Form inputs and select */
         .form-container input,
         .form-container select {
             width: 100%;
@@ -37,7 +35,6 @@
             border: 1px solid #ccc;
         }
 
-        /* Submit button */
         .form-container button {
             width: 100%;
             padding: 10px;
@@ -53,8 +50,27 @@
         .form-container button:hover {
             background-color: #218838;
         }
+
+        .back-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .back-btn:hover {
+            opacity: 0.85;
+        }
+
     </style>
 </head>
+
 <body class="donate-bg">
 
 <div class="form-container">
@@ -72,12 +88,14 @@
             <option value="Bkash">Bkash</option>
             <option value="Nagad">Nagad</option>
             <option value="Bank">Bank</option>
-
         </select><br><br>
 
         <button type="submit">Donate</button>
     </form>
+
 </div>
+
+    <a href="../index.php" class="back-btn">Back to Home</a>
 
 </body>
 </html>

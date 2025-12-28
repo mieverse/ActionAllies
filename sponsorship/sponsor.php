@@ -68,6 +68,23 @@
         .view-projects-btn:hover {
             opacity: 0.85;
         }
+        .back-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .back-btn:hover {
+            opacity: 0.85;
+        }
+
     </style>
 </head>
 <body class="sponsor-bg">
@@ -88,6 +105,6 @@
 
     
 </div>
-
+    <a href="../index.php" class="back-btn">Back to Home</a>
 </body>
 </html>
