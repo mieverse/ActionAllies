@@ -65,6 +65,8 @@
         <th>Start Date</th>
         <th>End Date</th>
         <th>Status</th>
+        <th>Collaborator</th>
+
     </tr>
 
     <!-- Dummy rows -->
@@ -74,6 +76,7 @@
         <td>2025-01-01</td>
         <td>2025-06-30</td>
         <td>Ongoing</td>
+        <td>Sister One</td>
     </tr>
     <tr>
         <td>2</td>
