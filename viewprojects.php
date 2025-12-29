@@ -4,7 +4,7 @@
     <title>View Projects</title>
     <style>
         body {
-            background-image: url('../elements/background/any.png');
+            background-image: url('elements/background/any.png');
             font-family: Arial, sans-serif;
             background-color: #f4f6f8;
             margin: 0;
@@ -12,9 +12,7 @@
             text-align: center;
         }
 
-        h2 {
-            margin-bottom: 30px;
-        }
+        h2 { margin-bottom: 30px; }
 
         table {
             width: 70%;
@@ -24,19 +22,11 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
-        th, td {
-            padding: 12px;
-            border: 1px solid #ccc;
-        }
+        th, td { padding: 12px; border: 1px solid #ccc; }
 
-        th {
-            background-color: #17a2b8;
-            color: #fff;
-        }
+        th { background-color: #17a2b8; color: #fff; }
 
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
+        tr:nth-child(even) { background-color: #f2f2f2; }
 
         .back-btn {
             display: inline-block;
@@ -49,14 +39,11 @@
             font-weight: bold;
         }
 
-        .back-btn:hover {
-            opacity: 0.85;
-        }
+        .back-btn:hover { opacity: 0.85; }
     </style>
 </head>
 
 <body>
-
 <h2>Project List</h2>
 
 <table>
@@ -67,10 +54,7 @@
         <th>End Date</th>
         <th>Status</th>
         <th>Collaborator</th>
-
     </tr>
-
-    <!-- Dummy rows -->
     <tr>
         <td>1</td>
         <td>Clean Water Initiative</td>
@@ -85,6 +69,7 @@
         <td>2024-03-01</td>
         <td>2024-12-31</td>
         <td>Completed</td>
+        <td></td>
     </tr>
     <tr>
         <td>3</td>
@@ -92,11 +77,11 @@
         <td>2025-02-15</td>
         <td>2025-07-15</td>
         <td>Ongoing</td>
+        <td></td>
     </tr>
-
 </table>
 
-<a href="../index.php" class="back-btn">Back to Home</a>
+<a href="index.php" class="back-btn">Back to Home</a>
 
 </body>
 </html>

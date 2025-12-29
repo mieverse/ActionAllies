@@ -1,105 +1,30 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Action Allies - Login</title>
-    <style>
-        /* General body */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: url('elements/background/login.png') no-repeat center center fixed;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+<?php
+session_start();
+include "../dbconnects.php";
 
-        /* Login container */
-        .login-container {
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 40px 30px;
-            border-radius: 12px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.3);
-            width: 350px;
-            text-align: center;
-        }
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
-        h1 {
-            margin-bottom: 25px;
-            color: #333;
-        }
+    $username = trim($_POST['DLead_ID']);
+    $password = trim($_POST['DLead_Pass']);
 
-        label {
-            display: block;
-            text-align: left;
-            margin: 10px 0 5px 0;
-            font-weight: bold;
-            color: #555;
-        }
+    $sql = "SELECT * FROM dptleads WHERE DLead_ID = ? AND DLead_Pass = ?";
+    $stmt = mysqli_prepare($conn, $sql);
 
-        input[type="text"],
-        input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            border-radius: 6px;
-            border: 1px solid #ccc;
-            margin-bottom: 15px;
-            box-sizing: border-box;
-        }
+    mysqli_stmt_bind_param($stmt, "ss", $username, $password);
+    mysqli_stmt_execute($stmt);
+    $result = mysqli_stmt_get_result($stmt);
 
-        button {
-            width: 100%;
-            padding: 12px;
-            border: none;
-            border-radius: 8px;
-            background-color: #007bff;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
+    if (mysqli_num_rows($result) === 1) {
 
-        button:hover {
-            background-color: #0056b3;
-        }
+        $_SESSION['DLead_ID'] = $username;
 
-        .guest-btn {
-            background-color: #28a745;
-        }
-
-        .guest-btn:hover {
-            background-color: #1e7e34;
-        }
-
-        form + form {
-            margin-top: 15px;
-        }
-    </style>
-</head>
-<body>
-
-<div class="login-container">
-
-    <h1>Organization Login</h1>
-
-    <form action="loginprocess.php" method="POST">
-        <label>Username</label>
-        <input type="text" name="username" placeholder="Enter your username" required>
-
-        <label>Password</label>
-        <input type="password" name="password" placeholder="Enter your password" required>
-
-        <button type="submit" name="login">Login</button>
-    </form>
-
-    <!-- Guest access -->
-    <form action="../index.php" method="GET">
-        <button class="guest-btn" type="submit">Use as Guest</button>
-    </form>
-
-</div>
-
-</body>
-</html>
+        header("Location: ../admin/adminindex.php");
+        exit();
+    } else {
+        echo "<script>
+                alert('Invalid credentials');
+                window.location.href='login.php';
+              </script>";
+    }
+}
+?>

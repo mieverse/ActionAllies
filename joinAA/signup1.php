@@ -12,15 +12,14 @@
         body {
             margin: 0;
             min-height: 100vh;
-            background-image: url('../elements/background/any.png'); no-repeat center center/cover;
+            background-image: url('../elements/background/any.png');
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        /* Form container */
         .form-card {
-            width: 600px; /* smaller width */
+            width: 600px; 
             background: white;
             padding: 35px 30px;
             border-radius: 15px;
@@ -30,7 +29,7 @@
         h1 {
             text-align: center;
             margin-bottom: 20px;
-            font-size: 22px; /* smaller heading */
+            font-size: 22px;
         }
 
         label {
@@ -50,7 +49,6 @@
             margin-bottom: 15px;
         }
 
-        /* Two-column rows */
         .row {
             display: flex;
             gap: 15px;
@@ -60,7 +58,6 @@
             flex: 1;
         }
 
-        /* Address row with 3 inputs */
         .address-row {
             display: flex;
             gap: 15px;
@@ -86,7 +83,6 @@
             background: #055fd1;
         }
 
-        /* Responsive for smaller screens */
         @media (max-width: 650px) {
             .form-card {
                 width: 90%;
@@ -104,7 +100,7 @@
 <div class="form-card">
     <h1>Personal Information</h1>
 
-    <form action="signup2.php" method="post">
+    <form action="signup1process.php" method="post">
 
         <input type="text" name="first_name" placeholder="First Name" required>
 
@@ -130,13 +126,7 @@
 
         <div class="address-row">
             <div class="field">
-                <input type="text" name="road" placeholder="Road" required>
-            </div>
-            <div class="field">
-                <input type="text" name="zip" placeholder="ZIP" required>
-            </div>
-            <div class="field">
-                <input type="text" name="city" placeholder="City" required>
+                <input type="text" name="address" placeholder="Road, City, ZIP" required>
             </div>
         </div>
 

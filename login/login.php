@@ -73,8 +73,8 @@
 
     <!-- Login form -->
     <form action="loginprocess.php" method="POST">
-        <input type="text" name="username" placeholder="Enter your username" required>
-        <input type="password" name="password" placeholder="Enter your password" required>
+        <input type="text" name="DLead_ID" placeholder="Enter your username" required>
+        <input type="password" name="DLead_Pass" placeholder="Enter your password" required>
         <button type="submit" name="login">Login</button>
     </form>
 

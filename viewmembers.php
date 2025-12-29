@@ -5,7 +5,7 @@
 
     <style>
         body {
-            background-image: url('../elements/background/any.png'); 
+            background-image: url('elements/background/any.png'); 
             font-family: Arial, sans-serif;
             background-color: #f4f6f8;
             margin: 0;
@@ -13,9 +13,7 @@
             text-align: center;
         }
 
-        h2 {
-            margin-bottom: 30px;
-        }
+        h2 { margin-bottom: 30px; }
 
         table {
             width: 70%;
@@ -25,19 +23,11 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        th, td {
-            padding: 12px;
-            border: 1px solid #ccc;
-        }
+        th, td { padding: 12px; border: 1px solid #ccc; }
 
-        th {
-            background-color: #007bff;
-            color: #fff;
-        }
+        th { background-color: #007bff; color: #fff; }
 
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
+        tr:nth-child(even) { background-color: #f2f2f2; }
 
         .back-btn {
             display: inline-block;
@@ -50,9 +40,7 @@
             font-weight: bold;
         }
 
-        .back-btn:hover {
-            opacity: 0.85;
-        }
+        .back-btn:hover { opacity: 0.85; }
     </style>
 </head>
 
@@ -65,27 +53,11 @@
             <th>Member Name</th>
             <th>Department</th>
         </tr>
-
-        <!-- Sample rows (for now) -->
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+        <tr><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td></tr>
     </table>
 
-    <a href="../index.php" class="back-btn">Back to Home</a>
+    <a href="index.php" class="back-btn">Back to Home</a>
 </body>
 </html>

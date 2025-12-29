@@ -9,7 +9,6 @@
             font-family: Arial, sans-serif;
             min-height: 100vh;
 
-            /* Background image path relative to homepage.php */
             background-image: url('elements/background/homepage.png');
             background-size: cover;
             background-position: center;
@@ -17,15 +16,15 @@
 
             display: flex;
             justify-content: center;
-            align-items: flex-end; /* button at bottom */
+            align-items: flex-end;
         }
 
         .see-more-btn {
             margin-bottom: 85px;
             padding: 12px 25px;
-            background-color: #28a745; /* green */
+            background-color: #28a745;
             color: white;
-            font-weight: bold; /* bold text */
+            font-weight: bold; 
             border: none;
             border-radius: 8px;
             font-size: 16px;
@@ -34,13 +33,13 @@
         }
 
         .see-more-btn:hover {
-            background-color: #1e7e34; /* darker green on hover */
+            background-color: #1e7e34;
         }
     </style>
 </head>
 <body>
 
-    <!-- Correct path to login.php inside login folder -->
+    
     <a href="login/login.php" class="see-more-btn">See More</a>
 
 </body>
