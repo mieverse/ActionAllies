@@ -21,14 +21,15 @@
             background-repeat: no-repeat;
 
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
 
         .form-card {
-            width: 480px;                          /* smaller container */
-            background: rgba(255, 255, 255, 0.95); /* slight transparency */
-            padding: 28px 32px;                    /* reduced padding */
+            width: 480px;                          
+            background: rgba(255, 255, 255, 0.95); 
+            padding: 28px 32px;                    
             border-radius: 16px;
             box-shadow: 0 15px 35px rgba(0,0,0,0.3);
         }
@@ -56,7 +57,7 @@
         }
 
         textarea {
-            height: 140px;        /* smaller textarea */
+            height: 140px;
             resize: none;
         }
 
@@ -67,7 +68,8 @@
             margin-bottom: 18px;
         }
 
-        button {
+        /* Submit button */
+        button.submit-btn {
             width: 100%;
             height: 44px;
             background: #0a7cff;
@@ -78,7 +80,29 @@
             cursor: pointer;
         }
 
-        button:hover {
+        button.submit-btn:hover {
+            background: #055fd1;
+        }
+
+        /* Home button styled like submit button but smaller width */
+        a.home-btn {
+            display: inline-block;
+            width: 140px;       
+            height: 44px;       
+            background: #0a7cff;
+            color: white;
+            font-size: 15px;
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 44px;  
+            text-decoration: none;
+            cursor: pointer;
+            margin-top: 14px;
+            transition: 0.2s ease;
+        }
+
+        a.home-btn:hover {
             background: #055fd1;
         }
     </style>
@@ -101,11 +125,14 @@
 
         <div class="note">Maximum 150 words</div>
 
-        <button type="submit">Submit</button>
+        <button type="submit" class="submit-btn">Submit Feedback</button>
 
     </form>
 
 </div>
+
+<!-- Home button below the form -->
+<a href="index.php" class="home-btn">Home</a>
 
 </body>
 </html>
