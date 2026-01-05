@@ -6,10 +6,10 @@
         background-position: center;
         font-family: Arial, sans-serif;
         margin: 0;
-        height: 100vh;             /* full viewport height */
-        display: flex;              /* flex container */
-        justify-content: center;    /* horizontal center */
-        align-items: center;        /* vertical center */
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
     }
 
@@ -37,7 +37,7 @@
 
     button {
         padding: 8px 18px;
-        background-color: #007bff;
+        background-color: #17a2b8;
         color: #fff;
         border: none;
         border-radius: 6px;
@@ -69,15 +69,16 @@
 </style>
 
 <div class="form-container">
+    <!-- <h2>Add Sister NGO</h2> -->
 
     <form method="POST">
-        <input type="text" name="member_id" placeholder="Member ID (e.g. GMB001)" required>
-        <input type="text" name="member_name" placeholder="Member Name" required>
-        <input type="text" name="department" placeholder="Department" required>
+        <input type="text" name="sister_id" placeholder="SNG001" required>
+        <input type="text" name="sister_name" placeholder="Sister NGO Name" required>
+        <input type="text" name="collab_project" placeholder="Collabed Project">
 
-        <button type="submit">Add Member</button>
+        <button type="submit">Add Sister NGO</button>
     </form>
 
-    <a href="../viewmembers.php" class="back-btn">Back to Members</a>
+    <a href="../viewsisters.php" class="back-btn">Back to Sister NGOs</a>
 </div>
 </body>

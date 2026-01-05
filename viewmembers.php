@@ -1,3 +1,15 @@
+<?php
+session_start();
+include "dbconnects.php";
+
+/* Check if admin is logged in */
+$isAdmin = (isset($_SESSION['role']) && $_SESSION['role'] === 'admin');
+
+/* Fetch members */
+$query = "SELECT * FROM validmembers";
+$result = mysqli_query($conn, $query);
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +17,7 @@
 
     <style>
         body {
-            background-image: url('elements/background/any.png'); 
+            background-image: url('elements/background/any.png');
             font-family: Arial, sans-serif;
             background-color: #f4f6f8;
             margin: 0;
@@ -23,11 +35,19 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        th, td { padding: 12px; border: 1px solid #ccc; }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ccc;
+        }
 
-        th { background-color: #007bff; color: #fff; }
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
 
-        tr:nth-child(even) { background-color: #f2f2f2; }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
 
         .back-btn {
             display: inline-block;
@@ -45,19 +65,28 @@
 </head>
 
 <body>
-    <h2>Our Members</h2>
 
-    <table>
-        <tr>
-            <th>Member ID</th>
-            <th>Member Name</th>
-            <th>Department</th>
-        </tr>
-        <tr><td></td><td></td><td></td></tr>
-        <tr><td></td><td></td><td></td></tr>
-        <tr><td></td><td></td><td></td></tr>
-    </table>
+<h2>Our Members</h2>
 
-    <a href="index.php" class="back-btn">Back to Home</a>
+<table>
+    <tr>
+        <th>Member ID</th>
+        <th>Member Name</th>
+        <th>Department</th>
+    </tr>
+
+    <?php while ($row = mysqli_fetch_assoc($result)): ?>
+<tr>
+    <td><?php echo $row['member_id']; ?></td>
+    <td><?php echo $row['member_name']; ?></td>
+    <td><?php echo $row['department']; ?></td>
+</tr>
+
+<?php endwhile; ?>
+
+</table>
+
+<a href="index.php" class="back-btn">Back to Home</a>
+
 </body>
 </html>

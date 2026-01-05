@@ -1,3 +1,12 @@
+<?php
+session_start();
+include "dbconnects.php";
+
+$isAdmin = (isset($_SESSION['role']) && $_SESSION['role'] === 'admin');
+
+$result = mysqli_query($conn, "SELECT * FROM validsisters");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +14,7 @@
 
     <style>
         body {
-            background-image: url('elements/background/any.png'); 
+            background-image: url('elements/background/any.png');
             font-family: Arial, sans-serif;
             background-color: #f4f6f8;
             margin: 0;
@@ -45,19 +54,26 @@
 </head>
 
 <body>
-    <h2>Our Sister NGOs</h2>
+<h2>Our Sister NGOs</h2>
 
-    <table>
-        <tr>
-            <th>SisterNGO ID</th>
-            <th>SisterNGO Name</th>
-            <th>Collabed Project</th>
-        </tr>
-        <tr><td></td><td></td><td></td></tr>
-        <tr><td></td><td></td><td></td></tr>
-        <tr><td></td><td></td><td></td></tr>
-    </table>
+<table>
+    <tr>
+        <th>SisterNGO ID</th>
+        <th>SisterNGO Name</th>
+        <th>Collabed Project</th>
 
-    <a href="index.php" class="back-btn">Back to Home</a>
+    </tr>
+
+    <?php while ($row = mysqli_fetch_assoc($result)): ?>
+    <tr>
+        <td><?php echo $row['sister_id']; ?></td>
+        <td><?php echo $row['sister_name']; ?></td>
+        <td><?php echo $row['collab_project']; ?></td>
+
+    </tr>
+    <?php endwhile; ?>
+</table>
+
+<a href="index.php" class="back-btn">Back to Home</a>
 </body>
 </html>
