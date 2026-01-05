@@ -12,3 +12,5 @@ if ($conn->connect_error) {
     mysqli_select_db($conn, $dbname);
 }
 ?>
+
+<!-- text -->
