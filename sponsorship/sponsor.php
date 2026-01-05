@@ -98,7 +98,7 @@
         <input type="email" name="sponsor_email" placeholder="Sponsor Email" required><br>
 
         <input type="text" name="sponsor_project" placeholder="Choose Project"><br>
-        <a href="../projects/view.php" class="view-projects-btn">View Projects</a>
+        <a href="../viewprojects.php" class="view-projects-btn">View Projects</a>
 
         <button type="submit">Submit Sponsorship</button>
     </form>
