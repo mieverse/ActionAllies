@@ -68,7 +68,6 @@
             margin-bottom: 18px;
         }
 
-        /* Submit button */
         button.submit-btn {
             width: 100%;
             height: 44px;
@@ -84,26 +83,19 @@
             background: #055fd1;
         }
 
-        /* Home button styled like submit button but smaller width */
-        a.home-btn {
+        .back-btn {
             display: inline-block;
-            width: 140px;       
-            height: 44px;       
-            background: #0a7cff;
-            color: white;
-            font-size: 15px;
-            border: none;
-            border-radius: 10px;
-            text-align: center;
-            line-height: 44px;  
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
             text-decoration: none;
-            cursor: pointer;
-            margin-top: 14px;
-            transition: 0.2s ease;
+            border-radius: 6px;
+            font-weight: bold;
         }
 
-        a.home-btn:hover {
-            background: #055fd1;
+        .back-btn:hover { opacity: 0.85; }
+        
         }
     </style>
 </head>
@@ -114,7 +106,7 @@
 
     <h1>Share Your Thoughts!</h1>
 
-    <form action="feedbackprocess.php" method="post">
+    <form action="fbprocess.php" method="post">
 
         <label>Email (Optional)</label>
         <input type="email" name="email" placeholder="Leave blank to stay anonymous">
@@ -131,8 +123,11 @@
 
 </div>
 
-<!-- Home button below the form -->
-<a href="index.php" class="home-btn">Home</a>
+
+
+
+    <a href="/project370/index.php" class="back-btn">Back to Home</a>
+
 
 </body>
 </html>

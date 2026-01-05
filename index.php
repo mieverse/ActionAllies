@@ -5,16 +5,16 @@
     <style>
         body.home-bg {
             background-image: url('elements/background/index.png');
-            background-size: contain;       
-            background-position: center;    
-            background-repeat: no-repeat;   
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
             min-height: 100vh;
             font-family: Arial, sans-serif;
             margin: 0;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;    
-            align-items: center;            
+            justify-content: flex-start;
+            align-items: center;
             text-align: center;
         }
 
@@ -65,6 +65,9 @@
 
     <a href="viewprojects.php" class="donate">View Projects</a>
     <a href="viewmembers.php" class="sponsor">View Members</a>
+
+    <a href="feedback.php" class="donate">Feedback</a>
+    <a href="sisterngo.php" class="sponsor">Sister NGO</a>
 
     <a href="joinAA/signup1.php" class="join">Be an Ally!</a>
 </div>
