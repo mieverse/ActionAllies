@@ -70,7 +70,6 @@ footer {
     <a href="addproject.php" class="editp">Edit Project List</a>
     <a href="addmember.php" class="editm">Edit Member List</a>
 
-    <!-- NEW BUTTON (added above logout) -->
     <a href="addsister.php" class="editp">Add Collaborators</a>
 
     <a href="../login/logout.php" class="logout-btn">Logout</a>

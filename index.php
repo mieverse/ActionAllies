@@ -60,19 +60,19 @@
 <body class="home-bg">
 
 <div class="button-container">
-    <!-- Donations & Sponsorship -->
+    
     <a href="./donation/donate.php" class="donate">Donate</a>
     <a href="./sponsorship/sponsor.php" class="sponsor">Become a Sponsor</a>
 
-    <!-- Projects & Members -->
+
     <a href="./viewprojects.php" class="donate">View Projects</a>
     <a href="./viewmembers.php" class="sponsor">View Members</a>
 
-    <!-- Feedback & Sister NGO -->
+    
     <a href="./feedback/fb.php" class="donate">Feedback</a>
     <a href="./viewsisters.php" class="sponsor">Sister NGO</a>
 
-    <!-- Join Action Allies -->
+    
     <a href="./joinAA/signup1.php" class="join">Be an Ally!</a>
 </div>
 

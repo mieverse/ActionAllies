@@ -2,10 +2,10 @@
 session_start();
 include "dbconnects.php";
 
-/* Check if admin is logged in */
+
 $isAdmin = (isset($_SESSION['role']) && $_SESSION['role'] === 'admin');
 
-/* Fetch members */
+
 $query = "SELECT * FROM validmembers";
 $result = mysqli_query($conn, $query);
 ?>

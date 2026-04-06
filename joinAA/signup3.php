@@ -20,16 +20,16 @@
         }
 
         .form-card {
-            width: 520px;              /* smaller width */
+            width: 520px;              
             background: rgba(255,255,255,0.95);
-            padding: 30px 35px;        /* reduced padding */
+            padding: 30px 35px;        
             border-radius: 16px;
             box-shadow: 0 15px 40px rgba(0,0,0,0.25);
         }
 
         label {
             font-weight: bold;
-            font-size: 20px;           /* smaller text */
+            font-size: 20px;           
             margin-bottom: 12px;
             display: block;
             text-align: center;
@@ -37,7 +37,7 @@
 
         textarea {
             width: 100%;
-            height: 160px;             /* shorter textarea */
+            height: 160px;             
             padding: 12px;
             border-radius: 10px;
             border: 1px solid #ccc;

@@ -3,7 +3,7 @@
 <head>
     <title>Action Allies - Login</title>
     <style>
-        /* Full page background */
+
         body {
             margin: 0;
             padding: 0;
@@ -18,7 +18,7 @@
             min-height: 100vh;
         }
 
-        /* Login container */
+ 
         .login-container {
             background-color: rgba(255, 255, 255, 0.9);
             padding: 40px 30px;
@@ -71,14 +71,14 @@
 <div class="login-container">
     <h1>Member Login</h1>
 
-    <!-- Login form -->
+
     <form action="loginprocess.php" method="POST">
         <input type="text" name="DLead_ID" placeholder="Enter your username" required>
         <input type="password" name="DLead_Pass" placeholder="Enter your password" required>
         <button type="submit" name="login">Login</button>
     </form>
 
-    <!-- Guest access -->
+
     <a href="../index.php">
         <button type="button" class="guest-btn">Use as Guest</button>
     </a>

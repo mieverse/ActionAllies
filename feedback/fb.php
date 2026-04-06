@@ -14,7 +14,7 @@
             margin: 0;
             min-height: 100vh;
 
-            /* Background image */
+            
             background-image: url('../elements/background/any.png');
             background-size: cover;
             background-position: center;

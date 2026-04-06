@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $status        = $_POST['status'];
     $collaborator  = $_POST['collaborator'];
 
-    $sql = "INSERT INTO validprojects 
+    $sql = "INSERT INTO validprojects
             (project_id, project_name, start_date, end_date, status, collaborator)
             VALUES (?, ?, ?, ?, ?, ?)";
 
@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         .form-container {
             background: #fff;
-            padding: 20px 25px;  /* smaller padding for shorter height */
+            padding: 20px 25px;
             width: 350px;
             margin: auto;
             border-radius: 12px;
@@ -73,8 +73,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         input, select {
             width: 90%;
-            padding: 8px;  /* reduced padding */
-            margin: 6px 0;  /* reduced margin */
+            padding: 8px;
+            margin: 6px 0;
             border: 1px solid #ccc;
             border-radius: 6px;
             font-size: 14px;
@@ -83,18 +83,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         label {
             font-weight: bold;
             display: block;
-            margin-top: 8px;  /* reduced top margin */
+            margin-top: 8px;
         }
 
         button {
-            padding: 8px 18px;  /* smaller button */
+            padding: 8px 18px;
             background-color: #17a2b8;
             color: #fff;
             border: none;
             border-radius: 6px;
             cursor: pointer;
             font-weight: bold;
-            margin-top: 8px;  /* reduced top margin */
+            margin-top: 8px;
         }
 
         button:hover {
@@ -102,14 +102,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         }
 
         .msg {
-            margin-bottom: 10px;  /* slightly smaller */
+            margin-bottom: 10px;
             color: green;
             font-weight: bold;
         }
 
         .back-btn {
             display: inline-block;
-            margin-top: 15px;  /* smaller spacing */
+            margin-top: 15px;
             padding: 7px 16px;
             background-color: #28a745;
             color: #fff;
@@ -148,7 +148,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <button type="submit">Add Project</button>
     </form>
 
-    <a href="../addprojects.php" class="back-btn">Back to Project List</a>
+    
+    <a href="/project370/viewprojects.php" class="back-btn">Back to Project List</a>
+
 </div>
 
 </body>

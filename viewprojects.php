@@ -2,10 +2,10 @@
 session_start();
 include "dbconnects.php";
 
-/* check admin */
+
 $isAdmin = (isset($_SESSION['role']) && $_SESSION['role'] === 'admin');
 
-/* fetch projects */
+
 $query = "SELECT * FROM validprojects";
 $result = mysqli_query($conn, $query);
 ?>

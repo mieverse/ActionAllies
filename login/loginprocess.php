@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if (mysqli_num_rows($result) === 1) {
 
         $_SESSION['DLead_ID'] = $username;
-        $_SESSION['role'] = 'admin';   // ⭐ THIS IS THE KEY LINE
+        $_SESSION['role'] = 'admin';
 
         header("Location: ../admin/adminindex.php");
         exit();

@@ -1,3 +1,37 @@
+<?php
+session_start();
+
+
+$conn = mysqli_connect("localhost", "root", "", "project370");
+
+if (!$conn) {
+    die("Database connection failed: " . mysqli_connect_error());
+}
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $member_id   = $_POST['member_id'];
+    $member_name = $_POST['member_name'];
+    $department  = $_POST['department'];
+
+    $sql = "INSERT INTO validmembers (member_id, member_name, department)
+            VALUES ('$member_id', '$member_name', '$department')";
+
+    if (mysqli_query($conn, $sql)) {
+        $msg = "Member added successfully!";
+    } else {
+        $msg = "Error: " . mysqli_error($conn);
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Member</title>
+</head>
+
 <body>
 <style>
     body {
@@ -6,10 +40,10 @@
         background-position: center;
         font-family: Arial, sans-serif;
         margin: 0;
-        height: 100vh;             /* full viewport height */
-        display: flex;              /* flex container */
-        justify-content: center;    /* horizontal center */
-        align-items: center;        /* vertical center */
+        height: 100vh;             
+        display: flex;             
+        justify-content: center;  
+        align-items: center; 
         text-align: center;
     }
 
@@ -70,6 +104,8 @@
 
 <div class="form-container">
 
+    <?php if (isset($msg)) echo "<div class='msg'>$msg</div>"; ?>
+
     <form method="POST">
         <input type="text" name="member_id" placeholder="Member ID (e.g. GMB001)" required>
         <input type="text" name="member_name" placeholder="Member Name" required>
@@ -80,4 +116,6 @@
 
     <a href="../viewmembers.php" class="back-btn">Back to Members</a>
 </div>
+
 </body>
+</html>
