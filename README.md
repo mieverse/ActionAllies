@@ -24,6 +24,10 @@ The database is fully normalized to **Third Normal Form (3NF)**, ensuring data c
 
 ---
 
+## 📄 Project Report 
+
+🔗 **Report Link:**  https://docs.google.com/document/d/1AdsE-YiQawT79HtiqTGvCu646VTZP7o8uxSwpD_bGrY/edit?usp=sharing
+
 ## Features
 
 ### 👤 Guest Access
