@@ -4,7 +4,6 @@
 > Group 07 | Lab Section 23
 
 ---
-
 ## 👥 Team Members
 
 | # | Name | Student ID | Modules |
@@ -25,8 +24,10 @@ The database is fully normalized to **Third Normal Form (3NF)**, ensuring data c
 ---
 
 ## 📄 Project Report 
+To view or download the full project report here: [CSE370 Project Report](https://github.com/user-attachments/files/26501089/CSE370_Project_Report.pdf)
 
-🔗 **Report Link:**  https://docs.google.com/document/d/1AdsE-YiQawT79HtiqTGvCu646VTZP7o8uxSwpD_bGrY/edit?usp=sharing
+🔗 Link:  https://docs.google.com/document/d/1AdsE-YiQawT79HtiqTGvCu646VTZP7o8uxSwpD_bGrY/edit?usp=sharing
+
 
 ## Features
 
